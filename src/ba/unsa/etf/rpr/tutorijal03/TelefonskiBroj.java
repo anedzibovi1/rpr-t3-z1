@@ -1,5 +1,17 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
+public abstract class TelefonskiBroj {
+    public abstract String ispisi();
+    public abstract int hashCode();
+}
+
+class FiksniBroj extends TelefonskiBroj {
+    public String broj;
+    public enum Grad {BIHAC, ORASJE, TUZLA, ZENICA, GORAZDE, TRAVNIK, MOSTAR, SIROKIBRIJEG, SARAJEVO, LIVNO, BRCKO};
+    
+}
+
+
 public class Main {
 
     public static void main(String[] args) {
