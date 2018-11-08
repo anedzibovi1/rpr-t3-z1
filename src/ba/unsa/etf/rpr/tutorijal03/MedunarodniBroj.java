@@ -2,18 +2,17 @@ package ba.unsa.etf.rpr.tutorijal03;
 
 import java.lang.String;
 
-public class MobilniBroj extends TelefonskiBroj{
-    public int mreza;
-    public String broj;
+public class MedunarodniBroj extends TelefonskiBroj{
+    String drzava;
+    String broj;
 
-    MobilniBroj(int mobilnaMreza, String broj) {
-        this.mreza=mobilnaMreza;
+    MedunarodniBroj(String drzava, String broj) {
+        this.drzava=drzava;
         this.broj=broj;
     }
-
     public String ispisi() {
         String s=new String();
-        s+="0" + this.mreza + "/" + this.broj;
+        s = this.drzava + this.broj;
         return s;
     }
 
@@ -21,4 +20,5 @@ public class MobilniBroj extends TelefonskiBroj{
     public int hashCode() {
         return 0;
     }
+
 }
