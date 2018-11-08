@@ -2,7 +2,8 @@ package ba.unsa.etf.rpr.tutorijal03;
 
 
 import java.util.*;
-import java.lang.String;
+
+import static ba.unsa.etf.rpr.tutorijal03.FiksniBroj.Grad.SARAJEVO;
 
 public class Imenik {
     Map<String, TelefonskiBroj> mapa = new HashMap<>();
@@ -60,5 +61,16 @@ public class Imenik {
         return set;
     }
 
+        public static void main(String[] args) {
+            Imenik imenik = new Imenik();
+            imenik.dodaj("Ivo Ivic", new FiksniBroj(SARAJEVO, "123-456"));
+            imenik.dodaj("Sara Sarac", new FiksniBroj(SARAJEVO, "123-156"));
+            imenik.dodaj("Meho Mehic", new FiksniBroj(SARAJEVO, "123-656"));
+            Set<String> set = imenik.izGrada(SARAJEVO);
+            String result = "";
+            for (String ime: set) {
+                result += ime + ",";
+            }
+        }
 }
 

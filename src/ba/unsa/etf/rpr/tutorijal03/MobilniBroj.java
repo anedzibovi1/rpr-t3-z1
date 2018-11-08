@@ -1,6 +1,6 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
-import java.lang.String;
+
 
 public class MobilniBroj extends TelefonskiBroj{
     public int mreza;

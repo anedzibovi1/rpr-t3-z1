@@ -1,7 +1,7 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
 
-import java.lang.String;
+
 
 public class FiksniBroj extends TelefonskiBroj {
     public String broj;

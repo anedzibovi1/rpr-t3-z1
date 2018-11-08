@@ -1,6 +1,6 @@
 package ba.unsa.etf.rpr.tutorijal03;
 
-import java.lang.String;
+
 
 public class MedunarodniBroj extends TelefonskiBroj{
     String drzava;
