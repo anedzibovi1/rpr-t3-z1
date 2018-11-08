@@ -38,7 +38,7 @@ public class Imenik {
             char c = key.charAt(0);
             if (Objects.equals(c, s)) {
                 i++;
-                d += i + "." + key + "-" + mapa.get(key).ispisi();
+                d += i + ". " + key + " - " + mapa.get(key).ispisi();
             }
         }
         return d;
